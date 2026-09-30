@@ -4,6 +4,8 @@ Manuscript: *Injury-event-level evaluation of machine learning models for athlet
 
 This package contains the code, both public datasets and the result files from which every table and data figure of the manuscript and of its Supplementary Information is regenerated. This version contains no manuscript text, review correspondence or internal notes.
 
+Version 1.0.0 of this repository is archived at Zenodo, https://doi.org/10.5281/zenodo.23055591; https://doi.org/10.5281/zenodo.23055590 always resolves to the latest version.
+
 ## Layout
 
 ```
