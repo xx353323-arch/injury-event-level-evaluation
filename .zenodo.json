@@ -1,0 +1,12 @@
+{
+  "title": "Injury-event-level evaluation of machine learning models for athlete injury risk prediction: reproduction package",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {"name": "Wang, Jian", "affiliation": "Department of Physical Education, Jiangsu Vocational College of Medicine"},
+    {"name": "Huang, Jie", "affiliation": "Faculty of Education and Sports Studies, Universiti Malaysia Sabah"}
+  ],
+  "description": "Code, the two public datasets and the result files that regenerate every table and data figure of the manuscript \"Injury-event-level evaluation of machine learning models for athlete injury risk prediction: a benchmark across two cohorts\" and of its Supplementary Information. The code is released under the MIT License; the bundled datasets keep their original licences (CC BY 4.0 for SoccerMon, CC0 1.0 for the running cohort).",
+  "keywords": ["injury risk prediction", "data leakage", "evaluation protocol", "cross-validation", "athlete monitoring", "benchmarking"]
+}
