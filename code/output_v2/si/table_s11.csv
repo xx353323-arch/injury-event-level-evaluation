@@ -1,0 +1,145 @@
+panel,block,row,measure,mean,range_min,range_max,range_over,n_runs,n_units
+a,injury-event-grouped protocol of Table 6,GBT,auc,0.7487833985156207,0.6140884752133499,0.8458202794568718,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GBT,auc_within_athlete,0.6111429671309055,0.48653143912264396,0.7164712560671384,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GBT,auc_between_athlete,0.7833333333333334,0.6964285714285714,0.9126984126984127,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GBT,ap,0.009985569094183161,0.004262395668993325,0.014674340743453168,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GBT,lift,3.6802612566516038,1.3057354697829766,6.333888111950935,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GBT,f1_calibrated,0.0154612889971678,0.0078431994083133,0.024644269153488167,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GBT,event_detection_rate,0.85,0.625,1.0,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LSTM,auc,0.7569914374194948,0.6793078869579505,0.8102988435715481,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LSTM,auc_within_athlete,0.7228487268324213,0.6874415772978247,0.8002350780167239,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LSTM,auc_between_athlete,0.7595238095238095,0.613095238095238,0.888888888888889,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LSTM,ap,0.09833915617017572,0.010487067135975225,0.15762943754307016,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LSTM,lift,37.77107611371075,3.2123074613935114,76.58352827534823,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LSTM,f1_calibrated,0.01394882284532795,0.010679398265226675,0.020793239300007368,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LSTM,event_detection_rate,0.7,0.5,1.0,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GAT,auc,0.8366744282235391,0.7173888371203976,0.9776028303915919,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GAT,auc_within_athlete,0.8829969384306281,0.7936848479121491,0.9476310008402399,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GAT,auc_between_athlete,0.7571428571428572,0.6428571428571428,0.9285714285714285,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GAT,ap,0.05601676942723803,0.03312710061500251,0.10090618586733428,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GAT,lift,22.508027737872492,9.464885890000732,49.42165944123722,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GAT,f1_calibrated,0.0201741817240234,0.018018018018017966,0.021877891870091436,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,GAT,event_detection_rate,1.0,1.0,1.0,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,Transformer,auc,0.6807238499976503,0.5138135575624199,0.8174233638439046,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,Transformer,auc_within_athlete,0.6076745105309647,0.37359069100571646,0.7754609137207313,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,Transformer,auc_between_athlete,0.7738095238095238,0.6964285714285714,0.8333333333333334,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,Transformer,ap,0.0859715393913478,0.003731674782912125,0.17775451444279047,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,Transformer,lift,35.48113347215857,1.143110720937837,87.07723523609161,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,Transformer,f1_calibrated,0.0095137314256114,0.002444134078212275,0.014920612925245333,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,Transformer,event_detection_rate,0.45,0.125,0.6666666666666666,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,ProtoNet,auc,0.8421598936558782,0.7685642360515441,0.9111533223424845,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,ProtoNet,auc_within_athlete,0.7824597242559574,0.7018317189542658,0.8391454217810227,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,ProtoNet,auc_between_athlete,0.7119047619047618,0.6507936507936508,0.753968253968254,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,ProtoNet,ap,0.045881496662419106,0.016617939519205475,0.09412947542834964,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,ProtoNet,lift,15.496141198172808,5.090090742573846,26.89413583667134,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,ProtoNet,f1_calibrated,0.0197405732121322,0.015959628536387032,0.027911346929751796,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,ProtoNet,event_detection_rate,0.9,0.75,1.0,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,DANN,auc,0.8134859325374129,0.739780278365312,0.8703655961196709,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,DANN,auc_within_athlete,0.7058494060665499,0.6430457781635484,0.8391384916126836,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,DANN,auc_between_athlete,0.7976190476190477,0.6845238095238095,0.9126984126984127,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,DANN,ap,0.07665966749104343,0.01573319326936845,0.20073365827277598,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,DANN,lift,34.3333435158029,4.818609138471294,98.35653029522577,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,DANN,f1_calibrated,0.019365209938303044,0.015395541059976633,0.023803202702285236,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,DANN,event_detection_rate,0.75,0.625,1.0,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,AthleteRate,auc,0.5286873941589805,0.5162608472586451,0.5448464826679683,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,AthleteRate,auc_within_athlete,0.5,0.5,0.5,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,AthleteRate,auc_between_athlete,0.5333333333333333,0.5158730158730158,0.5535714285714286,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,AthleteRate,ap,0.0033215639024837804,0.0022740045591202332,0.0037971250339029,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,AthleteRate,lift,1.1194237946978738,1.0848928668294004,1.1489254062735077,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,AthleteRate,f1_calibrated,0.006573418053927161,0.0043817605739021335,0.007565522831667099,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,AthleteRate,event_detection_rate,0.95,0.8333333333333334,1.0,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LMVG-TCA,auc,0.7076558369185921,0.5739464319406756,0.8043008355552846,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LMVG-TCA,auc_within_athlete,0.6400042265538237,0.5515646447967851,0.7835468789033889,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LMVG-TCA,auc_between_athlete,0.6690476190476191,0.5952380952380952,0.7619047619047619,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LMVG-TCA,ap,0.007809959210112401,0.004348932689680875,0.013650603209114867,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LMVG-TCA,lift,2.671272926204394,1.332462285398827,3.9001723454613977,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LMVG-TCA,f1_calibrated,0.01119917317899441,0.00494942957301585,0.01842751842751837,distinct splits,10,3
+a,injury-event-grouped protocol of Table 6,LMVG-TCA,event_detection_rate,0.55,0.375,0.8333333333333334,distinct splits,10,3
+a,random window-level split,LMVG-TCA,auc,0.9729239220563848,0.8891739220563847,0.9986266583747927,seeds,10,10
+a,random window-level split,LMVG-TCA,ap,0.5065199960982245,0.15938353863823349,0.7252492411821289,seeds,10,10
+a,random window-level split,LMVG-TCA,share,1.0,1.0,1.0,seeds,10,10
+b,unpurged event-grouped split,LMVG-TCA (full),auc,0.9062820922375107,0.8466413834079214,0.9773276129384865,distinct event partitions,10,3
+b,unpurged event-grouped split,LMVG-TCA (full),ap,0.028029850900332453,0.0143936211904021,0.07157619713933139,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o MMD alignment,auc,0.9063502435697975,0.8468210654425928,0.9773520711782848,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o MMD alignment,ap,0.02802976875278739,0.01438162039687321,0.07161426925442685,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o MMD alignment,delta_auc_vs_full,6.815133228682546e-05,-2.1532823853670502e-05,0.00017968203467150223,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o focal loss,auc,0.8200210331243124,0.7263430633151575,0.9410876057664914,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o focal loss,ap,0.020949000796282022,0.0073670554320847525,0.06110682818703138,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o focal loss,delta_auc_vs_full,-0.08626105911319837,-0.12029832009276385,-0.03624000717199499,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o temporal sampling,auc,0.906235861784477,0.8465263869057316,0.9773342837954625,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o temporal sampling,ap,0.028033085171673477,0.01438601514566219,0.07159185007310835,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o temporal sampling,delta_auc_vs_full,-4.623045303364659e-05,-0.00011499650218971258,6.670856976087602e-06,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o multi-view graph (single view),auc,0.9328792209224004,0.8975117631838698,0.9772676859866825,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o multi-view graph (single view),ap,0.0346383561189829,0.024136471567065946,0.07424489631253127,distinct event partitions,10,3
+b,unpurged event-grouped split,w/o multi-view graph (single view),delta_auc_vs_full,0.02659712868488957,-5.992695180395691e-05,0.05087037977594849,distinct event partitions,10,3
+c,support_rate_matched,LMVG-TCA,window_auc,0.7076558369185924,0.5739464319406756,0.8043008355552846,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,daily_fpr,0.18444741132139406,0.17420719890301575,0.19882087305569493,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,daily_sens,0.38331043956043953,0.1346153846153846,0.5625,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,weekly_fpr,0.21669515876001183,0.2007371468181174,0.23408564814814814,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,weekly_sens,0.4666666666666666,0.25,0.6666666666666666,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,weekly_ppv,0.009439170529863945,0.0065089828911470615,0.012251663147378697,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,healthy_weeks,1144.4,1133.3333333333333,1152.0,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,injury_weeks,5.4,4.0,6.0,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,alerts_per25,5.417378969000295,5.018428670452935,5.852141203703703,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,naive_per25,4.611185283034851,4.355179972575394,4.970521826392374,distinct splits,10,3
+c,support_rate_matched,LMVG-TCA,brier_skill,-38.483775028888786,-62.22187271819436,-22.151111427165443,distinct splits,10,3
+c,fixed_0.5,LMVG-TCA,weekly_fpr,0.1829118755705613,0.049419881350273025,0.4021990740740741,distinct splits,10,3
+c,fixed_0.5,LMVG-TCA,weekly_sens,0.29999999999999993,0.0,0.8333333333333334,distinct splits,10,3
+c,fixed_0.5,LMVG-TCA,weekly_ppv,0.0052157520773687144,0.0,0.010684749032815919,distinct splits,10,3
+d,unpurged event-grouped split,Embargo 0 days,auc,0.8356277061234482,0.7395207004999473,0.9435754189944134,seeds,3,3
+d,unpurged event-grouped split,Embargo 0 days,ap,0.016405813757018838,0.005966405987100929,0.03722752302142339,seeds,3,3
+d,unpurged event-grouped split,Embargo 0 days,support_positive_windows,11.666666666666666,7.0,19.0,seeds,3,3
+d,unpurged event-grouped split,Embargo 0 days,test_positive_windows,23.333333333333332,16.0,28.0,seeds,3,3
+d,unpurged event-grouped split,Embargo 7 days,auc,0.8524933299700979,0.7255836203597398,0.9304041820505539,seeds,3,3
+d,unpurged event-grouped split,Embargo 7 days,ap,0.019992372688894314,0.005758503044006492,0.044086762080020526,seeds,3,3
+d,unpurged event-grouped split,Embargo 7 days,support_positive_windows,11.666666666666666,7.0,19.0,seeds,3,3
+d,unpurged event-grouped split,Embargo 7 days,test_positive_windows,23.333333333333332,16.0,28.0,seeds,3,3
+d,unpurged event-grouped split,"Embargo 20 days (full model of Table 7, same seeds)",auc,0.8728297255389443,0.7198349800193578,0.9756790650514969,seeds,3,3
+d,unpurged event-grouped split,"Embargo 20 days (full model of Table 7, same seeds)",ap,0.027918376830028718,0.005609633224388668,0.06454490974895413,seeds,3,3
+d,unpurged event-grouped split,"Embargo 20 days (full model of Table 7, same seeds)",support_positive_windows,11.666666666666666,7.0,19.0,seeds,3,3
+d,unpurged event-grouped split,"Embargo 20 days (full model of Table 7, same seeds)",test_positive_windows,23.333333333333332,16.0,28.0,seeds,3,3
+d,unpurged event-grouped split,Embargo 21 days,auc,0.8975878482204868,0.8062307117253541,0.9726249777619641,seeds,3,3
+d,unpurged event-grouped split,Embargo 21 days,ap,0.02604912061059191,0.00792400787006676,0.05742402201028454,seeds,3,3
+d,unpurged event-grouped split,Embargo 21 days,support_positive_windows,11.666666666666666,7.0,19.0,seeds,3,3
+d,unpurged event-grouped split,Embargo 21 days,test_positive_windows,23.333333333333332,16.0,28.0,seeds,3,3
+d,chronological window assignment,Chronological window assignment,auc,0.9326751658374793,0.9195325456053068,0.9399927446102819,seeds,3,3
+d,chronological window assignment,Chronological window assignment,ap,0.10315143858682374,0.09962925505927023,0.10505813050392754,seeds,3,3
+d,chronological window assignment,Chronological window assignment,support_positive_windows,11.0,11.0,11.0,seeds,3,3
+d,chronological window assignment,Chronological window assignment,test_positive_windows,24.0,24.0,24.0,seeds,3,3
+d,chronological window assignment,Chronological window assignment,injury_events,3.0,3.0,3.0,seeds,3,3
+d,chronological window assignment,Chronological window assignment,injury_events_on_both_sides,3.0,3.0,3.0,seeds,3,3
+d,chronological window assignment,Chronological window assignment,test_positive_windows_in_shared_events,24.0,24.0,24.0,seeds,3,3
+e,athlete-grouped five-fold cross-validation,all methods,evaluable_fold_seed_combinations,9.0,9.0,9.0,single value,1,1
+e,athlete-grouped five-fold cross-validation,all methods,injury_events,3.0,3.0,3.0,single value,1,1
+e,athlete-grouped five-fold cross-validation,GBT,auc,0.7027267789244975,0.6770994024986421,0.7430255296034765,seeds,3,3
+e,athlete-grouped five-fold cross-validation,GBT,auc_within_athlete,0.6484555249533962,0.6422328580409514,0.6579506935852721,seeds,3,3
+e,athlete-grouped five-fold cross-validation,LSTM,auc,0.7266594242259642,0.6685768604019554,0.8323139598044541,seeds,3,3
+e,athlete-grouped five-fold cross-validation,LSTM,auc_within_athlete,0.7912144629374707,0.7065938265385384,0.8512003761186938,seeds,3,3
+e,athlete-grouped five-fold cross-validation,GAT,auc,0.8691037479630636,0.7806029331884845,0.9208582292232482,seeds,3,3
+e,athlete-grouped five-fold cross-validation,GAT,auc_within_athlete,0.8751246743162225,0.7401680632359615,0.9544520497537372,seeds,3,3
+e,athlete-grouped five-fold cross-validation,Transformer,auc,0.7173492667028788,0.6327593699076589,0.7597664312873438,seeds,3,3
+e,athlete-grouped five-fold cross-validation,Transformer,auc_within_athlete,0.77472992581848,0.7423919650568852,0.8040105346122228,seeds,3,3
+e,athlete-grouped five-fold cross-validation,ProtoNet,auc,0.919902227050516,0.8793481803367735,0.947919608908202,seeds,3,3
+e,athlete-grouped five-fold cross-validation,ProtoNet,auc_within_athlete,0.8964387684217147,0.8828064493983631,0.92171733866011,seeds,3,3
+e,athlete-grouped five-fold cross-validation,DANN,auc,0.7218106101756291,0.626132536664856,0.7765290602933188,seeds,3,3
+e,athlete-grouped five-fold cross-validation,DANN,auc_within_athlete,0.7324906693823384,0.7040096549167333,0.7746848562778806,seeds,3,3
+e,athlete-grouped five-fold cross-validation,AthleteRate,auc,0.3849538294405214,0.3849538294405214,0.3849538294405214,seeds,3,3
+e,athlete-grouped five-fold cross-validation,AthleteRate,auc_within_athlete,0.5,0.5,0.5,seeds,3,3
+e,athlete-grouped five-fold cross-validation,LMVG-TCA,auc,0.7987416259279376,0.7555621944595329,0.8263932645301466,seeds,3,3
+e,athlete-grouped five-fold cross-validation,LMVG-TCA,auc_within_athlete,0.8696853829452458,0.8486316997867227,0.8919124102724975,seeds,3,3
+f,injury-event-grouped protocol of Table 6,GBT,brier_skill,-3.7366462068073085,-5.207233884126786,-3.0300320800049745,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,GBT,f1_oracle,0.03532803369853399,0.0076474645820415,0.060685192943257436,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,LSTM,brier_skill,-2.599833750766396,-4.224344262804025,-1.784522800765747,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,LSTM,f1_oracle,0.19200893550443343,0.043992926996377725,0.29814814814814816,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,GAT,brier_skill,-17.070596631353332,-27.593377339425633,-11.903245546602134,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,GAT,f1_oracle,0.15880422746290657,0.12296596799639392,0.21208697140900526,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,Transformer,brier_skill,-3.619100999949125,-4.64849222623572,-1.7245364919027455,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,Transformer,f1_oracle,0.22155508087156509,0.00404532315120345,0.417425320056899,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,ProtoNet,brier_skill,-22.233957559234728,-28.133378391921468,-17.033421758206813,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,ProtoNet,f1_oracle,0.09160109604202929,0.04410008133984535,0.1797457667667417,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,DANN,brier_skill,-12.220099246190909,-13.204809243895385,-11.558666234939507,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,DANN,f1_oracle,0.1566698329672831,0.05276793812785473,0.34465534465534464,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,AthleteRate,brier_skill,-23.487881711207475,-31.13768409270485,-19.633768676029838,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,AthleteRate,f1_oracle,0.006573418053927161,0.0043817605739021335,0.007565522831667099,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,LMVG-TCA,brier_skill,-38.483775028888786,-62.22187271819436,-22.151111427165443,distinct splits,10,3
+f,injury-event-grouped protocol of Table 6,LMVG-TCA,f1_oracle,0.024847685836289803,0.01222156706755155,0.04344977570591416,distinct splits,10,3

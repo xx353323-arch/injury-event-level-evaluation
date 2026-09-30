@@ -1,0 +1,16 @@
+Protocol v2 split counts (SoccerMon, g = 7, h = 7, e = 20, negative block length 14, buffer ±13)
+==========================================================================================================================
+
+[assign=random]
+Target     athletes injured events pos/event  sup_ev  te_ev  sup_pos  purged_pos te_pos  sup_neg  te_neg    purged_neg residual  te_pos_same_athlete distinct_splits
+TeamA-2020 27    11   28   7/8/109    6–8     19     53–197  17–61   204–345 221–790  6780–8290 378–1243   0.000    0.545     10
+TeamA-2021 27    4    8    7/7/12     1–2     6      7–15    0–12    42–48   28–70    9284–9464 52–130     0.000    0.280     10
+TeamB-2020 23    3    3    7/9/19     1       2      7–19    0       16–28   28–84    7812–7972 52–156     0.000    0.000     3
+
+[assign=chronological]
+Target     athletes injured events pos/event  sup_ev  te_ev  sup_pos  purged_pos te_pos  sup_neg  te_neg    purged_neg residual  te_pos_same_athlete distinct_splits
+TeamA-2020 27    11   28   7/8/109    8       19     189     25      213     757–769  6719–6917 1062–1266  0.000    0.775     1
+TeamA-2021 27    4    8    7/7/12     2       6      19      0       43      78–87    9330–9358 125–156    0.000    0.000     1
+TeamB-2020 23    3    3    7/9/19     1       2      9       0       26      42–45    7921–7937 78–91      0.000    0.000     1
+
+All assertions passed (support and test event sets are disjoint; test positive windows have no observation-interval overlap with support positive windows); runtime 11.3 s.

@@ -1,0 +1,79 @@
+{
+  "results": [
+    {
+      "method": "XGBoost",
+      "params": 10624,
+      "train_ms_per_step": null,
+      "train_full_ms": 2636.2938750000003,
+      "infer_ms": 0.5940999999999974,
+      "note": "GradientBoosting, params=tree nodes; train_full_ms=full fit"
+    },
+    {
+      "method": "LSTM",
+      "params": 54849,
+      "train_ms_per_step": 7.154624999999992,
+      "train_full_ms": null,
+      "infer_ms": 3.5331166599999975,
+      "note": "2-layer LSTM hidden=64, dropout=0.3"
+    },
+    {
+      "method": "GAT",
+      "params": 9729,
+      "train_ms_per_step": 44.3967792,
+      "train_full_ms": null,
+      "infer_ms": 12.946684159999986,
+      "note": "StandardGAT d_model=32, 2 heads, channel-wise attention"
+    },
+    {
+      "method": "NVG",
+      "params": 48321,
+      "train_ms_per_step": 26.446627050000025,
+      "train_full_ms": null,
+      "infer_ms": 12.281480000000009,
+      "note": "TCAGNN + fixed natural visibility graph"
+    },
+    {
+      "method": "LMVG",
+      "params": 48334,
+      "train_ms_per_step": 38.982214550000016,
+      "train_full_ms": null,
+      "infer_ms": 19.6495775,
+      "note": "TCAGNN + learnable multi-view graph (3 views with softmax fusion)"
+    },
+    {
+      "method": "Transformer",
+      "params": 27297,
+      "train_ms_per_step": 9.008747900000014,
+      "train_full_ms": null,
+      "infer_ms": 1.9303741599999924,
+      "note": "2-layer Transformer encoder d_model=32, 2 heads"
+    },
+    {
+      "method": "DANN",
+      "params": 56995,
+      "train_ms_per_step": 7.797952050000045,
+      "train_full_ms": null,
+      "infer_ms": 3.72765416,
+      "note": "LSTM encoder with classification and domain heads; supervised step on the classification logit"
+    },
+    {
+      "method": "ProtoNet",
+      "params": 27264,
+      "train_ms_per_step": 9.43387290000004,
+      "train_full_ms": null,
+      "infer_ms": 2.0911166600000186,
+      "note": "Transformer encoder with projection head; prototype logits from the batch"
+    }
+  ],
+  "env": {
+    "batch_size": 64,
+    "T": 14,
+    "n_channels": 10,
+    "torch_version": "2.8.0",
+    "device": "cpu",
+    "n_warmup_infer": 5,
+    "n_repeat_infer": 50,
+    "n_warmup_train": 3,
+    "n_repeat_train": 20
+  }
+}

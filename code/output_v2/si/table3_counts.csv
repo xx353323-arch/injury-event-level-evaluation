@@ -1,0 +1,5 @@
+Task,Source train (windows / pos),Target labelled support (pos / neg),Target unlabelled,Target test (pos / neg)
+TeamA-2020,"26,019 / 104",53–197 / 221–790,32 windows per episode from a support train subset of 239–952 windows,"204–345 / 6,780–8,290"
+TeamA-2021,"25,884 / 469",7–15 / 28–70,32 windows per episode from a support train subset of 35–50 windows,"42–48 / 9,284–9,464"
+TeamB-2020,"27,431 / 496",7–19 / 28–84,32 windows per episode from the full support partition of 35–103 windows,"16–28 / 7,812–7,972"
+Runners G1–G3,"27,351–29,370 / 379–399",61–68 / 244–285,32 windows per episode from a support train subset of 300–348 windows,"123–136 / 12,257–14,327"

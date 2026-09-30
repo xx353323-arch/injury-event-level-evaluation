@@ -1,0 +1,13 @@
+objective,target,seed,gumbel_sampling,temperature,n_view_logits,n_thresholds,n_remaining,n_remaining_without_gradient,grad_norm_view_logits,grad_norm_thresholds,grad_norm_remaining,ratio_remaining_to_thresholds,ratio_remaining_to_view_logits,nonzero_view_logits,nonzero_thresholds
+with_structure_regulariser,TeamA-2020,42,soft,1.0,3,10,48321,0,4.730564e-02,1.538874e-02,9.774094e-02,6.3515,2.0662,True,True
+with_structure_regulariser,TeamA-2020,123,soft,1.0,3,10,48321,0,5.071387e-02,1.551010e-02,1.458973e-01,9.4066,2.8769,True,True
+with_structure_regulariser,TeamA-2020,2026,soft,1.0,3,10,48321,0,5.097968e-02,1.548717e-02,9.969126e-02,6.4370,1.9555,True,True
+with_structure_regulariser,TeamA-2020,42,hard,1.0,3,10,48321,0,5.229353e-02,1.556645e-02,9.735285e-02,6.2540,1.8617,True,True
+with_structure_regulariser,TeamA-2020,123,hard,1.0,3,10,48321,0,5.759627e-02,1.588303e-02,1.454740e-01,9.1591,2.5258,True,True
+with_structure_regulariser,TeamA-2020,2026,hard,1.0,3,10,48321,0,5.733682e-02,1.584699e-02,9.957074e-02,6.2833,1.7366,True,True
+without_structure_regulariser,TeamA-2020,42,soft,1.0,3,10,48321,0,6.572362e-05,4.659796e-05,9.774055e-02,2097.5287,1487.1451,True,True
+without_structure_regulariser,TeamA-2020,123,soft,1.0,3,10,48321,0,4.811638e-05,4.576234e-05,1.458975e-01,3188.1560,3032.1784,True,True
+without_structure_regulariser,TeamA-2020,2026,soft,1.0,3,10,48321,0,4.789631e-05,4.910582e-05,9.969137e-02,2030.1336,2081.3997,True,True
+without_structure_regulariser,TeamA-2020,42,hard,1.0,3,10,48321,0,8.513153e-05,5.393781e-05,9.735254e-02,1804.9034,1143.5545,True,True
+without_structure_regulariser,TeamA-2020,123,hard,1.0,3,10,48321,0,5.320429e-05,4.673722e-05,1.454740e-01,3112.5950,2734.2540,True,True
+without_structure_regulariser,TeamA-2020,2026,hard,1.0,3,10,48321,0,3.017503e-05,7.218414e-05,9.956246e-02,1379.2844,3299.4983,True,True

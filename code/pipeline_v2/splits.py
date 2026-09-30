@@ -124,6 +124,34 @@ def event_level_split_v2(y, players, dates, events, rng, T=14, horizon=7, embarg
     return sup_p, te_p, sup_n, te_n, info
 
 
+def window_random_split(y, players, dates, events, rng, T=14, horizon=7, sup_frac=1.0 / 3.0, neg_ratio=4):
+    dates = dates.astype("datetime64[D]")
+    pos_idx = np.where(y == 1)[0]
+    neg_idx = np.where(y == 0)[0]
+    eid = np.array([window_event_id(events, players[i], dates[i], horizon) for i in pos_idx], dtype=object)
+    keep = np.array([e is not None for e in eid])
+    pos_idx, eid = pos_idx[keep], eid[keep]
+    perm = rng.permutation(len(pos_idx))
+    n_sup = max(int(len(pos_idx) * sup_frac), 1)
+    sup_p, te_p = pos_idx[perm[:n_sup]], pos_idx[perm[n_sup:]]
+    sup_eid, te_eid = eid[perm[:n_sup]], eid[perm[n_sup:]]
+    neg_perm = rng.permutation(neg_idx)
+    n_sup_neg = min(neg_ratio * len(sup_p), len(neg_perm))
+    sup_n, te_n = np.sort(neg_perm[:n_sup_neg]), np.sort(neg_perm[n_sup_neg:])
+    sup_set = set(sup_eid.tolist())
+    share = float(np.mean([e in sup_set for e in te_eid])) if len(te_eid) else 0.0
+    info = dict(
+        protocol="window_random", T=T, horizon=horizon, embargo=0,
+        n_athletes=int(len(set(players.tolist()))), n_injured_athletes=int(len(set(players[pos_idx].tolist()))),
+        n_events=int(len(set(eid.tolist()))), n_sup_events=int(len(sup_set)), n_te_events=int(len(set(te_eid.tolist()))),
+        n_sup_pos=int(len(sup_p)), n_te_pos=int(len(te_p)), n_sup_neg=int(len(sup_n)), n_te_neg=int(len(te_n)),
+        frac_te_pos_sharing_event_with_sup=share,
+        frac_te_pos_same_athlete_as_sup=float(np.mean([players[i] in set(players[sup_p].tolist()) for i in te_p])) if len(te_p) else 0.0,
+        split_id=hashlib.md5(",".join(map(str, sorted(te_p.tolist()))).encode()).hexdigest()[:10],
+    )
+    return np.sort(sup_p), np.sort(te_p), sup_n, te_n, info
+
+
 def athlete_grouped_folds(players, y, n_folds=5, rng=None, leave_one_out=False):
     uniq = np.array(sorted(set(players.tolist())))
     injured = np.array([y[players == p].sum() > 0 for p in uniq])

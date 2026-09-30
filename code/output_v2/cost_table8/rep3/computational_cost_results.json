@@ -1,0 +1,79 @@
+{
+  "results": [
+    {
+      "method": "XGBoost",
+      "params": 10624,
+      "train_ms_per_step": null,
+      "train_full_ms": 2652.9615830000007,
+      "infer_ms": 0.5453937500000006,
+      "note": "GradientBoosting, params=tree nodes; train_full_ms=full fit"
+    },
+    {
+      "method": "LSTM",
+      "params": 54849,
+      "train_ms_per_step": 8.385543750000002,
+      "train_full_ms": null,
+      "infer_ms": 3.632139159999994,
+      "note": "2-layer LSTM hidden=64, dropout=0.3"
+    },
+    {
+      "method": "GAT",
+      "params": 9729,
+      "train_ms_per_step": 45.988733349999976,
+      "train_full_ms": null,
+      "infer_ms": 12.951644179999988,
+      "note": "StandardGAT d_model=32, 2 heads, channel-wise attention"
+    },
+    {
+      "method": "NVG",
+      "params": 48321,
+      "train_ms_per_step": 26.061493749999975,
+      "train_full_ms": null,
+      "infer_ms": 11.946120000000011,
+      "note": "TCAGNN + fixed natural visibility graph"
+    },
+    {
+      "method": "LMVG",
+      "params": 48334,
+      "train_ms_per_step": 39.02171040000004,
+      "train_full_ms": null,
+      "infer_ms": 20.2330525,
+      "note": "TCAGNN + learnable multi-view graph (3 views with softmax fusion)"
+    },
+    {
+      "method": "Transformer",
+      "params": 27297,
+      "train_ms_per_step": 9.53812704999999,
+      "train_full_ms": null,
+      "infer_ms": 2.6182358400000183,
+      "note": "2-layer Transformer encoder d_model=32, 2 heads"
+    },
+    {
+      "method": "DANN",
+      "params": 56995,
+      "train_ms_per_step": 8.14221039999996,
+      "train_full_ms": null,
+      "infer_ms": 4.278271679999968,
+      "note": "LSTM encoder with classification and domain heads; supervised step on the classification logit"
+    },
+    {
+      "method": "ProtoNet",
+      "params": 27264,
+      "train_ms_per_step": 10.10378955000002,
+      "train_full_ms": null,
+      "infer_ms": 2.225977499999985,
+      "note": "Transformer encoder with projection head; prototype logits from the batch"
+    }
+  ],
+  "env": {
+    "batch_size": 64,
+    "T": 14,
+    "n_channels": 10,
+    "torch_version": "2.8.0",
+    "device": "cpu",
+    "n_warmup_infer": 5,
+    "n_repeat_infer": 50,
+    "n_warmup_train": 3,
+    "n_repeat_train": 20
+  }
+}

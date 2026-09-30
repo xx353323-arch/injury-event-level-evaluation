@@ -119,7 +119,7 @@ def main():
     d = np.load(os.path.join(SCRIPT_DIR, "..", "data", "windows.npz"), allow_pickle=True)
     X, y, tasks, players = d["X"], d["y"], d["tasks"], d["players"]
     dates = pd.to_datetime(d["dates"]).values
-    print("补救协议敏感性: LMVG-TCA-PAML across split protocols (3 seed)")
+    print("Protocol sensitivity: LMVG-TCA across split protocols (3 seeds)")
     print(f"protocols: {list(PROTOCOLS.keys())}")
     out = []
     t0 = time.time()

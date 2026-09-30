@@ -5,7 +5,7 @@ ROOT = os.path.join(HERE, "..")
 sys.path.insert(0, os.path.join(ROOT, "src")); sys.path.insert(0, os.path.join(ROOT, "scripts")); sys.path.insert(0, HERE)
 from sklearn.metrics import roc_auc_score, average_precision_score
 from events import load_injury_table, reconstruct_events
-from splits import event_level_split_v2, athlete_grouped_folds, _blocks
+from splits import event_level_split_v2, athlete_grouped_folds, _blocks, window_random_split
 import paml_full_lmvg_v2 as P
 from graph_backend_v2 import make_model_v2
 from lmvg_v2 import hamming_distance, cosine_temperature
@@ -45,7 +45,13 @@ def load_cohort(name):
 def build_task(C, protocol, target, split_seed, embargo=20):
     rng = np.random.default_rng(split_seed)
     y, players, dates, tasks = C["y"], C["players"], C["dates"], C["tasks"]
-    if protocol.startswith("event_v2"):
+    if protocol == "window_random":
+        tgt = target; m = tasks == tgt; g = np.where(m)[0]
+        sp, tp, sn, tn, info = window_random_split(y[m], players[m], dates[m], C["events"], rng, T=C["T"], horizon=C["horizon"])
+        sup_idx, te_idx = g[np.concatenate([sp, sn])], g[np.concatenate([tp, tn])]
+        sup_p_g = g[sp]
+        src_mask = np.isin(tasks, [t for t in C["tasks_all"] if t != tgt])
+    elif protocol.startswith("event_v2"):
         tgt = target; m = tasks == tgt; g = np.where(m)[0]
         assign = "chronological" if protocol.endswith("chrono") else "random"
         sp, tp, sn, tn, info = event_level_split_v2(y[m], players[m], dates[m], C["events"], rng, T=C["T"], horizon=C["horizon"], embargo=embargo, assign=assign)
@@ -175,7 +181,7 @@ def main():
     ap.add_argument("--threads", type=int, default=2); ap.add_argument("--embargo", type=int, default=20)
     a = ap.parse_args(); torch.set_num_threads(a.threads)
     C = load_cohort(a.cohort)
-    targets = a.targets.split(",") if a.targets else (C["targets"] if a.protocol.startswith("event_v2") else [f"{t}:{k}" for t in C["targets"] for k in range(5)])
+    targets = a.targets.split(",") if a.targets else (C["targets"] if (a.protocol.startswith("event_v2") or a.protocol == "window_random") else [f"{t}:{k}" for t in C["targets"] for k in range(5)])
     methods = a.methods.split(","); seeds = [int(s) for s in a.seeds.split(",")]
     dump_dir = os.path.join(OUT, "dumps", a.cohort, a.protocol); os.makedirs(dump_dir, exist_ok=True)
     summ_path = os.path.join(OUT, f"summary_{a.cohort}_{a.protocol}_{targets[0].replace(':','_')}.jsonl")

@@ -1,0 +1,10 @@
+merge_interval_days,main_protocol,events_total,events_TeamA-2020,events_TeamA-2021,events_TeamB-2020,events_TeamB-2021,events_with_positive_window_TeamA-2020,events_with_positive_window_TeamA-2021,events_with_positive_window_TeamB-2020,events_with_positive_window_TeamB-2021,events_without_positive_window,positive_windows,positive_windows_per_event_min,positive_windows_per_event_median,positive_windows_per_event_max
+0,False,156,135,12,8,1,135,12,7,1,1,531,1,2.0,7
+1,False,104,86,9,8,1,86,9,7,1,1,531,2,5.0,12
+3,False,63,49,8,5,1,49,8,5,1,0,531,2,7.0,27
+5,False,45,31,8,5,1,31,8,5,1,0,531,2,7.0,69
+7,True,40,28,8,3,1,28,8,3,1,0,531,7,7.5,109
+10,False,35,24,7,3,1,24,7,3,1,0,531,7,8.0,109
+14,False,29,18,7,3,1,18,7,3,1,0,531,7,8.0,146
+21,False,28,17,7,3,1,17,7,3,1,0,531,7,7.5,146
+28,False,27,16,7,3,1,16,7,3,1,0,531,7,8.0,153

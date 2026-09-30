@@ -153,7 +153,7 @@ def main():
     d = np.load(os.path.join(SCRIPT_DIR, "..", "data", "windows.npz"), allow_pickle=True)
     X, y, tasks, players = d["X"], d["y"], d["tasks"], d["players"]
     dates = pd.to_datetime(d["dates"]).values
-    print("R1-4 原型化可行性验证 (prototype-in-query-loss + nearest-prototype eval)")
+    print("Prototype feasibility check (prototype-in-query-loss + nearest-prototype evaluation)")
     out = []
     t0 = time.time()
     for tgt in ["TeamA-2020", "TeamA-2021"]:

@@ -63,15 +63,6 @@ def chronological_window_split(y_tgt, dates_tgt, rng, sup_frac=1.0/3.0):
 
 def event_level_split(y_tgt, players_tgt, dates_tgt, rng, embargo_days=None):
     embargo = EMBARGO if embargo_days is None else int(embargo_days)
-    """
-    Injury-event-level support/test split with temporal purge+embargo.
-    Positive windows are grouped by the injury event they predict; whole
-    events (never individual windows) are assigned to support or test, so no
-    event's overlapping windows can straddle both sides. An embargo of
-    WIN+HORIZON-1 days around every event date range purges same-player
-    windows (positive or negative) that fall inside the opposite side's
-    embargo zone, removing residual overlap leakage from negatives too.
-    """
     pos_idx = np.where(y_tgt == 1)[0]
     neg_idx = np.where(y_tgt == 0)[0]
 

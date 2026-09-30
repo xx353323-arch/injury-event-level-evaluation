@@ -1,0 +1,59 @@
+============================================================
+Computational Cost Comparison
+============================================================
+
+[1] XGBoost (GradientBoosting)
+    Params (tree nodes): 10,624
+    Train time (full fit): 2665.92 ms
+    Inference (B=100):    0.57 ms
+
+[2] LSTM
+    Params: 54,849
+    Train step (B=64): 7.29 ms
+    Inference (B=64):  3.51 ms
+
+[3] GAT (StandardGAT)
+    Params: 9,729
+    Train step (B=64): 43.81 ms
+    Inference (B=64):  12.97 ms
+
+[4] NVG (TCAGNN with fixed natural-visibility-graph)
+    Params: 48,321
+    Train step (B=64): 27.71 ms
+    Inference (B=64):  11.89 ms
+
+[5] LMVG (TCAGNN with learnable multi-view graph)
+    Params: 48,334
+    Train step (B=64): 37.74 ms
+    Inference (B=64):  19.77 ms
+
+[6] Transformer
+    Params: 27,297
+    Train step (B=64): 9.34 ms
+    Inference (B=64):  1.93 ms
+
+[7] DANN
+    Params: 56,995
+    Train step (B=64): 7.86 ms
+    Inference (B=64):  3.99 ms
+
+[8] ProtoNet
+    Params: 27,264
+    Train step (B=64): 9.22 ms
+    Inference (B=64):  2.02 ms
+
+============================================================
+Summary Table
+============================================================
+Method             Params     Train/step(ms)      Infer(ms)
+------------------------------------------------------------
+XGBoost            10,624         2666(full)           0.57
+LSTM               54,849               7.29           3.51
+GAT                 9,729              43.81          12.97
+NVG                48,321              27.71          11.89
+LMVG               48,334              37.74          19.77
+Transformer        27,297               9.34           1.93
+DANN               56,995               7.86           3.99
+ProtoNet           27,264               9.22           2.02
+
+Saved: computational_cost_results.json and computational_cost_table.csv

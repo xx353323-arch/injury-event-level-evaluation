@@ -381,7 +381,7 @@ def main():
             all_results.append(res)
             if res["status"] == "ok":
                 p = res["paml"]; b = res["baseline"]
-                print(f"  ==> PAML: AUC={p['auc']:.4f} AP={p['ap']:.4f} F1={p['f1']:.4f}")
+                print(f"  ==> LMVG-TCA: AUC={p['auc']:.4f} AP={p['ap']:.4f} F1={p['f1']:.4f}")
                 print(f"  ==> BASE: AUC={b['auc']:.4f} AP={b['ap']:.4f} F1={b['f1']:.4f}")
             else:
                 print(f"  ==> STATUS: {res['status']}")

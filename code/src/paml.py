@@ -273,7 +273,7 @@ def main():
     final_model = clone_model(meta_model)
     final_model = fine_tune(final_model, X_sup, y_sup, steps=50, lr=1e-3)
     r = eval_on_target(final_model, X_te, y_te)
-    print("\n======== FINAL PAML (after fine-tune on target support) ========")
+    print("\n======== FINAL LMVG-TCA (after fine-tune on target support) ========")
     for k in ["auc", "ap", "f1", "precision", "recall"]:
         print(f"   {k:9s} {r[k]:.4f}")
     print(f"   chosen_thr = {r['thr']:.2f}")

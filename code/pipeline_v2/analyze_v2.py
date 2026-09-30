@@ -60,8 +60,6 @@ def metrics(r):
 
 
 def within_athlete_auc(r):
-    """按运动员分层的 AUC：只在同一运动员内部比较正负窗口，剔除个体间差异。
-    回答「能否预测该运动员何时受伤」，区别于整体 AUC 可能来自「区分哪个运动员会受伤」。"""
     y, p, players = r["y"], r["prob"], r["player"]
     aucs, weights, n_used = [], [], 0
     for a in np.unique(players):
@@ -74,8 +72,6 @@ def within_athlete_auc(r):
 
 
 def between_athlete_auc(r):
-    """个体间 AUC：把每名运动员聚合为一个点（平均预测分 vs 是否有伤病），
-    衡量模型多大程度只是在区分「哪个运动员会受伤」。"""
     y, p, players = r["y"], r["prob"], r["player"]
     uniq = np.unique(players)
     ay = np.array([1 if y[players == a].sum() > 0 else 0 for a in uniq])
@@ -130,8 +126,6 @@ def hedges_g(d):
 
 
 def pooled_report(recs, cohort):
-    """athlete_grouped5 专用：把同一 cohort 同一 seed 的 5 折测试预测拼接后统一计算，
-    每名运动员恰好在测试侧出现一次，等价于分层的留一运动员交叉验证。"""
     from collections import defaultdict
     groups = defaultdict(list)
     for r in recs:
@@ -179,18 +173,18 @@ def main():
         pdf = pooled_report(recs, a.cohort)
         pdf.to_csv(os.path.join(HERE, "..", "output_v2", f"pooled_{a.cohort}_{a.protocol}.csv"), index=False)
         print("\n" + "=" * 112)
-        print("拼接 5 折后的统一估计（每名运动员在测试侧恰好出现一次）")
+        print("Estimates pooled over the evaluated folds of each seed")
         print("=" * 112)
         for t in sorted(pdf.target.unique()):
             sub = pdf[pdf.target == t]
-            print(f"\n### {t}  折数={int(sub.n_folds.median())}  测试事件={int(sub.n_events.median())}  运动员={int(sub.n_athletes.median())}  seed数={sub.seed.nunique()}")
-            print(f"{'方法':<13}{'AUC(整体)':<16}{'AUC(个体内)':<14}{'AUC(个体间)':<14}{'AP':<16}{'F1(标定)':<10}{'事件检出率'}")
+            print(f"\n### {t}  folds={int(sub.n_folds.median())}  test events={int(sub.n_events.median())}  athletes={int(sub.n_athletes.median())}  seeds={sub.seed.nunique()}")
+            print(f"{'Method':<13}{'AUC (overall)':<16}{'AUC (within)':<14}{'AUC (between)':<14}{'AP':<16}{'F1':<10}{'Event detection'}")
             for m in METHODS:
                 ss = sub[sub.method == m]
                 if not len(ss): continue
                 print(f"{m:<13}{ss.auc.mean():.3f}±{ss.auc.std():.3f}    {ss.auc_within_athlete.mean():<14.3f}{ss.auc_between_athlete.mean():<14.3f}{ss.ap.mean():.4f}±{ss.ap.std():.4f}  {ss.f1_calibrated.mean():<10.3f}{ss.event_detection_rate.mean():.3f}")
             ref = sub[sub.method == "LSTM"].set_index("seed")
-            print(f"{'':13}{'对 LSTM 配对（整体 / 个体内）':<44}{'Δ整体':<10}{'p':<9}{'Δ个体内':<10}{'p'}")
+            print(f"{'':13}{'Paired against LSTM (overall / within)':<44}{'Δ overall':<10}{'p':<9}{'Δ within':<10}{'p'}")
             for m in METHODS:
                 if m == "LSTM": continue
                 ss = sub[sub.method == m].set_index("seed")
@@ -208,9 +202,9 @@ def main():
     for t in sorted(df.target.unique()):
         sub = df[df.target == t]
         nev = int(sub.n_events.median()); npos = int(sub.n_pos.median()); nsplit = sub.split_id.nunique()
-        tag = "  [事件数<5，标记 not evaluable]" if nev < 5 else ""
-        print(f"\n### {t}   测试事件数={nev}  测试正窗={npos}  独立划分={nsplit}{tag}")
-        print(f"{'方法':<13}{'AUC(整体)':<16}{'AUC(个体内)':<13}{'AUC(个体间)':<13}{'AP':<14}{'lift':<7}{'F1(标定)':<10}{'事件检出率':<12}{'BrierSkill'}")
+        tag = "  [fewer than 5 test events, not evaluable]" if nev < 5 else ""
+        print(f"\n### {t}   test events={nev}  positive test windows={npos}  distinct splits={nsplit}{tag}")
+        print(f"{'Method':<13}{'AUC (overall)':<16}{'AUC (within)':<13}{'AUC (between)':<13}{'AP':<14}{'lift':<7}{'F1':<10}{'Event detection':<12}{'BrierSkill'}")
         for m in METHODS:
             s = sub[sub.method == m]
             if not len(s): continue
@@ -218,7 +212,7 @@ def main():
             print(f"{m:<13}{s.auc.mean():.3f}±{s.auc.std():.3f}    {s.auc_within_athlete.mean():<13.3f}{s.auc_between_athlete.mean():<13.3f}{s.ap.mean():.4f}±{s.ap.std():.4f}  {s.lift.mean():<7.1f}{s.f1_calibrated.mean():<10.3f}{det:<12}{s.brier_skill.mean():.4f}")
         ref = sub[sub.method == "LSTM"].set_index("seed").auc
         flo = sub[sub.method == "AthleteRate"].set_index("seed").auc
-        print(f"{'':13}{'--- 对 LSTM ---':<30}{'Δ':<10}{'p':<9}{'TOST p':<9}{'Hedges g':<10}{'--- 对 AthleteRate 地板 ---':<24}{'Δ':<9}{'p'}")
+        print(f"{'':13}{'--- vs LSTM ---':<30}{'Δ':<10}{'p':<9}{'TOST p':<9}{'Hedges g':<10}{'--- vs AthleteRate floor ---':<24}{'Δ':<9}{'p'}")
         for m in METHODS:
             if m == "LSTM": continue
             s = sub[sub.method == m].set_index("seed").auc

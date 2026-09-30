@@ -1,0 +1,9 @@
+target,variant,delta_auc,p_unadjusted,p_holm
+TeamA-2020,w/o MMD alignment,-0.0009,0.2468,0.7599
+TeamA-2020,w/o focal loss,0.0072,0.19,0.7599
+TeamA-2020,w/o temporal sampling,0.0006,0.3973,0.7599
+TeamA-2020,w/o multi-view graph (single view),0.0033,0.2009,0.7599
+TeamA-2021,w/o MMD alignment,-0.0009,0.8838,1.0
+TeamA-2021,w/o focal loss,-0.06,0.0094,0.0375
+TeamA-2021,w/o temporal sampling,-0.0001,0.9357,1.0
+TeamA-2021,w/o multi-view graph (single view),-0.0104,0.5429,1.0

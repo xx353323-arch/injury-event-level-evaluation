@@ -1,0 +1,127 @@
+analysis,split,target,seed,n_sup_pos,n_sup_neg,n_te_pos,n_te_neg,matches_result_file
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,0,208,832,219,8081,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,1,97,388,330,8481,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,2,218,872,209,8018,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,3,134,536,293,8350,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,4,113,452,314,8446,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,5,201,804,226,8112,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,6,93,372,334,8490,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,42,87,348,340,8487,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,123,117,468,310,8437,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2020,2026,102,408,325,8449,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 0-day embargo",TeamA-2020,42,87,348,340,8747,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 0-day embargo",TeamA-2020,123,117,468,310,8627,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 0-day embargo",TeamA-2020,2026,102,408,325,8687,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 7-day embargo",TeamA-2020,42,87,348,340,8687,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 7-day embargo",TeamA-2020,123,117,468,310,8577,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 7-day embargo",TeamA-2020,2026,102,408,325,8637,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 21-day embargo",TeamA-2020,42,87,348,340,8473,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 21-day embargo",TeamA-2020,123,117,468,310,8428,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 21-day embargo",TeamA-2020,2026,102,408,325,8435,True
+chronological variant (Supplementary Table S2),chronological window assignment,TeamA-2020,42,142,568,285,8536,True
+chronological variant (Supplementary Table S2),chronological window assignment,TeamA-2020,123,142,568,285,8536,True
+chronological variant (Supplementary Table S2),chronological window assignment,TeamA-2020,2026,142,568,285,8536,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,0,14,56,48,9480,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,1,15,60,47,9476,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,2,19,76,43,9475,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,3,19,76,43,9502,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,4,14,56,48,9481,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,5,14,56,48,9481,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,6,14,56,48,9481,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,42,14,56,48,9480,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,123,20,80,42,9470,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamA-2021,2026,15,60,47,9476,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 0-day embargo",TeamA-2021,42,14,56,48,9546,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 0-day embargo",TeamA-2021,123,20,80,42,9522,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 0-day embargo",TeamA-2021,2026,15,60,47,9542,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 7-day embargo",TeamA-2021,42,14,56,48,9532,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 7-day embargo",TeamA-2021,123,20,80,42,9515,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 7-day embargo",TeamA-2021,2026,15,60,47,9528,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 21-day embargo",TeamA-2021,42,14,56,48,9476,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 21-day embargo",TeamA-2021,123,20,80,42,9467,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 21-day embargo",TeamA-2021,2026,15,60,47,9473,True
+chronological variant (Supplementary Table S2),chronological window assignment,TeamA-2021,42,20,80,42,9524,True
+chronological variant (Supplementary Table S2),chronological window assignment,TeamA-2021,123,20,80,42,9524,True
+chronological variant (Supplementary Table S2),chronological window assignment,TeamA-2021,2026,20,80,42,9524,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,0,9,36,26,8027,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,1,19,76,16,7982,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,2,9,36,26,8027,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,3,9,36,26,8027,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,4,19,76,16,7982,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,5,7,28,28,8030,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,6,19,76,16,7982,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,42,9,36,26,8027,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,123,19,76,16,7982,True
+"ablation (Table 7, Figure 4)","unpurged event-grouped, 20-day embargo",TeamB-2020,2026,7,28,28,8031,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 0-day embargo",TeamB-2020,42,9,36,26,8047,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 0-day embargo",TeamB-2020,123,19,76,16,8007,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 0-day embargo",TeamB-2020,2026,7,28,28,8055,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 7-day embargo",TeamB-2020,42,9,36,26,8040,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 7-day embargo",TeamB-2020,123,19,76,16,8000,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 7-day embargo",TeamB-2020,2026,7,28,28,8048,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 21-day embargo",TeamB-2020,42,9,36,26,8026,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 21-day embargo",TeamB-2020,123,19,76,16,7982,True
+embargo length (Supplementary Table S1),"unpurged event-grouped, 21-day embargo",TeamB-2020,2026,7,28,28,8030,True
+chronological variant (Supplementary Table S2),chronological window assignment,TeamB-2020,42,11,44,24,8040,True
+chronological variant (Supplementary Table S2),chronological window assignment,TeamB-2020,123,11,44,24,8040,True
+chronological variant (Supplementary Table S2),chronological window assignment,TeamB-2020,2026,11,44,24,8040,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,0,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,1,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,2,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,3,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,4,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,5,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,6,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,42,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,123,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G1,2026,68,272,136,14939,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,0,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,1,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,2,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,3,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,4,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,5,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,6,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,42,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,123,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G1,2026,10,40,194,15171,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,0,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,1,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,2,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,3,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,4,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,5,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,6,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,42,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,123,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G2,2026,65,260,130,12941,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,0,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,1,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,2,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,3,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,4,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,5,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,6,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,42,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,123,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G2,2026,10,40,185,13161,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,0,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,1,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,2,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,3,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,4,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,5,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,6,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,42,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,123,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, full support",G3,2026,61,244,123,13527,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,0,10,40,174,13731,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,1,10,40,174,13731,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,2,10,40,174,13731,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,3,10,40,174,13731,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,4,10,40,174,13731,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,5,10,40,174,13731,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,6,10,40,174,13731,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,42,10,40,174,13731,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,123,10,40,174,13731,True
+support size (Supplementary Table S3),"window-level split of the running cohort, ten-event support",G3,2026,10,40,174,13731,True

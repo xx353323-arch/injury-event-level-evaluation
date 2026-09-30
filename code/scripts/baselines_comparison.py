@@ -271,10 +271,6 @@ def main():
             f1s = [r["f1"] for r in runs]
             print(f"    [{method:18s}] AUC={np.mean(aucs):.4f}±{np.std(aucs):.4f} AP={np.mean(aps):.4f}±{np.std(aps):.4f} F1={np.mean(f1s):.4f}±{np.std(f1s):.4f} (n={len(runs)})")
 
-    print("\n\n===== REFERENCE: Our PAML results (from paml_full.py) =====")
-    print("  [TeamA-2020][PAML] AUC=0.9011±0.0084 AP=0.2669±0.0313 F1=0.3668±0.0145")
-    print("  [TeamA-2021][PAML] AUC=0.9039±0.0101 AP=0.0334±0.0041 F1=0.0915±0.0243")
-    print("  [TeamB-2020][PAML] AUC=0.9862±0.0060 AP=0.3284±0.1809 F1=0.3653±0.1466")
 
 
 if __name__ == "__main__":

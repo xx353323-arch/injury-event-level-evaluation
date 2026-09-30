@@ -1,0 +1,9 @@
+method,params,train_ms_per_step,train_full_ms,infer_ms,note
+XGBoost,10624,,2652.9615830000007,0.5453937500000006,"GradientBoosting, params=tree nodes; train_full_ms=full fit"
+LSTM,54849,8.385543750000002,,3.632139159999994,"2-layer LSTM hidden=64, dropout=0.3"
+GAT,9729,45.988733349999976,,12.951644179999988,"StandardGAT d_model=32, 2 heads, channel-wise attention"
+NVG,48321,26.061493749999975,,11.946120000000011,TCAGNN + fixed natural visibility graph
+LMVG,48334,39.02171040000004,,20.2330525,TCAGNN + learnable multi-view graph (3 views with softmax fusion)
+Transformer,27297,9.53812704999999,,2.6182358400000183,"2-layer Transformer encoder d_model=32, 2 heads"
+DANN,56995,8.14221039999996,,4.278271679999968,LSTM encoder with classification and domain heads; supervised step on the classification logit
+ProtoNet,27264,10.10378955000002,,2.225977499999985,Transformer encoder with projection head; prototype logits from the batch
